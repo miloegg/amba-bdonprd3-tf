@@ -20,7 +20,7 @@ provider "azurerm" {
 }
 
 locals {
-  root_management_group_name = jsondecode(file("${path.root}/lib/custom.alz_architecture_definition.json")).management_groups[0].id
+  root_management_group_name = jsondecode(file("${path.root}/lib/architecture_definitions/alz.alz_architecture_definition.json")).management_groups[0].id
 }
 
 module "amba_alz" {
@@ -42,7 +42,7 @@ module "amba_policy" {
   source  = "Azure/avm-ptn-alz/azurerm"
   version = "0.12.0"
 
-  architecture_name  = "custom"
+  architecture_name  = "alz"
   location           = var.location
   parent_resource_id = data.azapi_client_config.current.tenant_id
   policy_default_values = {

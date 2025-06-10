@@ -5,3 +5,4 @@
 .terraform/
 .alzlib
 *.terraform.lock.hcl
+*.txt
