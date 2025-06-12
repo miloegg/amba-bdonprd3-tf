@@ -11,3 +11,6 @@ This same service principal is used across both plan and apply environments for 
 ## SPN with Storage Blob Data Owner permissions to read tfstate
 ![SPN_permissions_2](./sp_permissions_2.png)
 
+## SPN Federated Identity
+![SPN_permissions_2](./sp_permissions_3.png)
+
