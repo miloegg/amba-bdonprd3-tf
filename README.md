@@ -4,5 +4,10 @@ Hence to run this code, another service principal is created with the abovementi
 
 This same service principal is used across both plan and apply environments for this repository
 
-![SPN_permissions](./spn_permissions.png)
+
+## SPN with owner permissions on intermediate root group
+![SPN_permissions_1](./sp_permissions_1.png)
+
+## SPN with Storage Blob Data Owner permissions to read tfstate
+![SPN_permissions_2](./sp_permissions_2.png)
 
