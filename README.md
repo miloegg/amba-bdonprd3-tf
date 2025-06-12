@@ -4,6 +4,8 @@ Hence to run this code, another service principal is created with the abovementi
 
 This same service principal is used across both plan and apply environments for this repository
 
+The deployment uses the same GH runners and storage account for tfstate as the ALZ bootstrap deployment. It uses modified reusable workflows (different concurrency) from the ALZ 
+
 
 ## SPN with owner permissions on intermediate root group
 ![SPN_permissions_1](./sp_permissions_1.png)
