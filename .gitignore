@@ -1,6 +1,5 @@
 *.tfstate
 *.tfstate.*
-*.tfvars
 *.tfplan
 .terraform/
 .alzlib
